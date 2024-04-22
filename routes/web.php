@@ -10,3 +10,4 @@ Route::get('/', function () {
 
 Route::resource('titles', TitleController::class);
 Route::resource('totals', TotalController::class);
+Route::post('/update-titles', [TitleController::class, 'updateTitles'])->name('titles.update');

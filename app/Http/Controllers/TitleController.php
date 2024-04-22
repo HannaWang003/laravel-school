@@ -69,4 +69,9 @@ class TitleController extends Controller
         $title = Title::where('sh', '1')->first();
         return view('layouts.app', ['title' => $title]);
     }
+    public function updateTitles(Request $request)
+    {
+        $input = $request->except('_token');
+        dd($input);
+    }
 }
