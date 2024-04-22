@@ -1,6 +1,6 @@
 @extends('layouts.app');
 @section('content')
-    <form action="{{ route('titles.update') }}" method="post">
+    <form action="{{ route('mytitles.update') }}" method="post">
         @csrf
         <table class="yel" style="margin:auto;width:100%;">
             <th>網站標題</th>

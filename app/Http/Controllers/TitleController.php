@@ -53,7 +53,8 @@ class TitleController extends Controller
      */
     public function update(Request $request, title $title)
     {
-        //
+        $input = $request->except('_token', '_method');
+        dd($input);
     }
 
     /**
