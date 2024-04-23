@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    function pb()
+    function pb(Request $request)
     {
-        $ver = $_GET['version'];
+        $ver = $request->input('version');
         return view('page.index', ['version' => $ver]);
     }
 }
